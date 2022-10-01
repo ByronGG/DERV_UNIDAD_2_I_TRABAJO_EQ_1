@@ -786,9 +786,10 @@ GameObject:
   - component: {fileID: 1149271087}
   - component: {fileID: 1149271086}
   - component: {fileID: 1149271085}
-  - component: {fileID: 1149271090}
   - component: {fileID: 1149271089}
   - component: {fileID: 1149271091}
+  - component: {fileID: 1149271093}
+  - component: {fileID: 1149271092}
   m_Layer: 0
   m_Name: Jugador
   m_TagString: Untagged
@@ -888,19 +889,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vida: {fileID: 76714913}
   ataque: {fileID: 2029950171}
---- !u!114 &1149271090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1149271084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4e27f13b7aaedc4dbc3a3c8eb31b5e6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 10
 --- !u!54 &1149271091
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -917,6 +905,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1149271092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149271084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf04c12cc74f4fc459fd2dc216cca58c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1149271093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149271084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a77d270d6a832c746a59bf7e80c0cac6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  desplazamiento: 10
 --- !u!1 &1177530302
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,11 +1464,10 @@ GameObject:
   - component: {fileID: 1779420555}
   - component: {fileID: 1779420554}
   - component: {fileID: 1779420553}
-  - component: {fileID: 1779420557}
   - component: {fileID: 1779420558}
   m_Layer: 0
   m_Name: Enemigo
-  m_TagString: Untagged
+  m_TagString: Enemigo_TAG
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1538,20 +1550,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1779420557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779420552}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d77b3f61c0ce9594bb0c0a3c9008d012, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  vida: {fileID: 665866923}
-  ataque: {fileID: 855506690}
 --- !u!114 &1779420558
 MonoBehaviour:
   m_ObjectHideFlags: 0
