@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro_Juego/Inicio.unity
     guid: dcd210b09f5f62145bf06e586284dc8b
   - enabled: 1
-    path: Assets/Scenes/Intro_Juego/Intro_Instantie 1.unity
+    path: Assets/Scenes/Intro_Juego/Intro_Instantie_V2.unity
     guid: 220f218f3653a29439256f07f1c148e3
   - enabled: 1
     path: Assets/Scenes/Intro_Juego/Fin.unity

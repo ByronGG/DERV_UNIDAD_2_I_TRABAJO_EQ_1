@@ -4,10 +4,12 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class control_UI_Game : MonoBehaviour
+public class control_UI_Game_V2 : MonoBehaviour
 {
     [SerializeField]
     TextMeshProUGUI txt_nombre;
+    [SerializeField]
+    TextMeshProUGUI txt_tiempo; //añadido por inspector
 
     public void cambiarEscena(int index_escena)
     {
@@ -37,6 +39,9 @@ public class control_UI_Game : MonoBehaviour
         {
             string nombre = PlayerPrefs.GetString("nom_usuario", "");
             txt_nombre.text = nombre;
+
+            string tiempo = PlayerPrefs.GetString("Score", "");
+            txt_tiempo.text = tiempo;
         }
 
     }

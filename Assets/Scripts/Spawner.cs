@@ -26,6 +26,7 @@ public class Spawner : MonoBehaviour
             //Aquien se va instanciar
             //Donde va a instanciar
 
+
             GameObject objClonado;
             objClonado = Instantiate(aquien_instanciar,
                 spawn.transform.position, spawn.transform.rotation);

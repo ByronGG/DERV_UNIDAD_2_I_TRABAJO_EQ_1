@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Colissiones_Destroy : MonoBehaviour
+public class Colissiones_Destroy_V2 : MonoBehaviour
 {
+    [SerializeField]
+    GameObject ref_handler_spawns; //inspector
+    Manager_Spawns control_manager_spawns; //getcomponent
+
+
     [SerializeField]
     TextMeshProUGUI texto_tiempo; //se vincula desde inspector
 
-
+    //Código tarea de puntaje
     public GameObject Objscore; //Se crea el objeto que guardara el score del juegador
     public float Score; //Valor de puntos que se le da desde el inspector 
 
@@ -26,6 +31,8 @@ public class Colissiones_Destroy : MonoBehaviour
     {
         con_objetos_comidos = 0;
         componente_control_UI = referencia_to_HanlerUI.GetComponent<control_UI_Game_V2>();
+        //agregado para la version 2
+        control_manager_spawns = ref_handler_spawns.GetComponent<Manager_Spawns>();
     }
 
     // Update is called once per frame
@@ -63,6 +70,8 @@ public class Colissiones_Destroy : MonoBehaviour
                     //Se acaba el juego
                     componente_control_UI.cambiarEscena(2);
                 }
+
+                control_manager_spawns.crearEnemigo();
             }
         }
     }   
